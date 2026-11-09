@@ -21,13 +21,10 @@ from PIL import Image, ImageDraw
 ROOT = Path(__file__).resolve().parent.parent
 ASSETS = ROOT / "assets"
 
+# Triadic harmony from hue 255: indigo, red-orange (15), green (135).
 THEMES = {
-    "dark": dict(bg="#0E1330", bg2="#1A2050", line="#2C3370", text="#F4F2FF", muted="#A9ADD8", faint="#3A4186",
-                 gold="#F2C14E", lilac="#B9A6FF", pink="#FF8FB8", win_a="#2B3078", win_b="#6A4596", shade="#090C24",
-                 paper="#F4F2FF", paper_line="#B9A6FF", city="#1A1E4E"),
-    "light": dict(bg="#F7F5FF", bg2="#E9E5FF", line="#D3CDF4", text="#171A45", muted="#5A5D8A", faint="#C8C2EE",
-                  gold="#B27C00", lilac="#6A4ED2", pink="#CE3C78", win_a="#CFC8FF", win_b="#FFD3E2", shade="#272A63",
-                  paper="#FFFFFF", paper_line="#A796EC", city="#9C97CC"),
+    "dark": dict(bg="#120D21", bg2="#1E1537", line="#392B64", text="#EFECF9", muted="#B4ACCD", faint="#433276", gold="#4CF075", lilac="#8E6DF3", pink="#F0754C", win_a="#2A1C54", win_b="#8D4B35", shade="#0A0712", paper="#EFECF9", paper_line="#8E6DF3", city="#1A1230"),
+    "light": dict(bg="#F7F5FC", bg2="#E8E2F8", line="#CDC4E9", text="#191132", muted="#5F5483", faint="#C8BFE3", gold="#12812E", lilac="#431BBB", pink="#BB431B", win_a="#CDC2F0", win_b="#F6D6CB", shade="#281C4A", paper="#FFFFFF", paper_line="#9F8CD9", city="#948BB1"),
 }
 KEYS = list(THEMES["dark"])
 BAYER = [[0, 8, 2, 10], [12, 4, 14, 6], [3, 11, 1, 9], [15, 7, 13, 5]]
