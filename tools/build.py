@@ -554,13 +554,21 @@ def ascii_roles():
     return "\n".join(lines)
 
 
-def pic(name, alt, width=None, height=None):
+def pic(name, alt, width=None, height=None, href=None):
+    """Both theme versions of an image; GitHub's CSS hides the one that doesn't match its theme.
+
+    <picture> follows the operating system's theme, so dark GitHub on a light OS got the
+    light images. These tags follow GitHub's own setting instead. The CSS matches links
+    ending in the tag: GitHub wraps a bare image in such a link, but leaves an image that
+    is already linked alone, so a linked image needs the tag on its own href.
+    """
     size = (f' width="{width}"' if width else "") + (f' height="{height}"' if height else "")
-    return (
-        f'<picture><source media="(prefers-color-scheme: dark)" srcset="assets/{name}-dark.gif">'
-        f'<source media="(prefers-color-scheme: light)" srcset="assets/{name}-light.gif">'
-        f'<img src="assets/{name}-dark.gif" alt="{alt}"{size}></picture>'
-    )
+    out = []
+    for theme in THEMES:
+        tag = f"#gh-{theme}-mode-only"
+        image = f'<img src="assets/{name}-{theme}.gif{tag}" alt="{alt}"{size}>'
+        out.append(f'<a href="{href}{tag}">{image}</a>' if href else image)
+    return "".join(out)
 
 
 def link(label, url):
@@ -571,7 +579,7 @@ def card_cell(name, alt, url, title, brief, result, links):
     res = f"<p><b>Key result.</b> {result}</p>" if result else ""
     links_html = " · ".join(link(a, b) for a, b in links)
     return (
-        f'<td width="50%" valign="top"><a href="{url}">{pic(name, alt, width="100%")}</a>'
+        f'<td width="50%" valign="top">{pic(name, alt, width="100%", href=url)}'
         f"<h3>{title}</h3><p>{brief}</p>{res}<p>{links_html}</p></td>"
     )
 

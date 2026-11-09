@@ -1,5 +1,5 @@
 <!-- Written by tools/build.py; edit that. -->
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.gif"><source media="(prefers-color-scheme: light)" srcset="assets/hero-light.gif"><img src="assets/hero-dark.gif" alt="Hi, I'm Sajal. Designer and builder. AI, hardware, software, canvas: all just mediums."></picture></p>
+<p align="center"><img src="assets/hero-dark.gif#gh-dark-mode-only" alt="Hi, I'm Sajal. Designer and builder. AI, hardware, software, canvas: all just mediums."><img src="assets/hero-light.gif#gh-light-mode-only" alt="Hi, I'm Sajal. Designer and builder. AI, hardware, software, canvas: all just mediums."></p>
 
 <p align="center"><b>Designer and builder.</b> AI, hardware, software, a blank canvas: they're all just mediums.<br><a href="https://sajalkumar.com">sajalkumar.com</a></p>
 
@@ -45,7 +45,7 @@
 > AI, hardware, software, a blank canvas: they're all just mediums.
 
 </td>
-<td width="38%" align="center" valign="middle"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/metro-dark.gif"><source media="(prefers-color-scheme: light)" srcset="assets/metro-light.gif"><img src="assets/metro-dark.gif" alt="A pixel metro window with silhouettes swaying, and one looking up from a phone" width="100%"></picture></td>
+<td width="38%" align="center" valign="middle"><img src="assets/metro-dark.gif#gh-dark-mode-only" alt="A pixel metro window with silhouettes swaying, and one looking up from a phone" width="100%"><img src="assets/metro-light.gif#gh-light-mode-only" alt="A pixel metro window with silhouettes swaying, and one looking up from a phone" width="100%"></td>
 </tr>
 </table>
 
@@ -64,8 +64,8 @@
 <h3 align="center">Disciplines</h3>
 
 <table align="center">
-<tr><td width="50%" align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/disc-product-dark.gif"><source media="(prefers-color-scheme: light)" srcset="assets/disc-product-light.gif"><img src="assets/disc-product-dark.gif" alt="A pixel cursor drags a card into place" width="64" height="64"></picture><br><b>Product design</b><br><sub>Flows, systems, polish</sub></td><td width="50%" align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/disc-engineering-dark.gif"><source media="(prefers-color-scheme: light)" srcset="assets/disc-engineering-light.gif"><img src="assets/disc-engineering-dark.gif" alt="Pixel code brackets blinking like a caret" width="64" height="64"></picture><br><b>Engineering</b><br><sub>Prototypes and Figma plugins, in code</sub></td></tr>
-<tr><td width="50%" align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/disc-hardware-dark.gif"><source media="(prefers-color-scheme: light)" srcset="assets/disc-hardware-light.gif"><img src="assets/disc-hardware-dark.gif" alt="A pixel knob turning while an LED pulses" width="64" height="64"></picture><br><b>Hardware interactions</b><br><sub>Physical-digital interfaces</sub></td><td width="50%" align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/disc-art-dark.gif"><source media="(prefers-color-scheme: light)" srcset="assets/disc-art-light.gif"><img src="assets/disc-art-dark.gif" alt="A pixel cube rotating" width="64" height="64"></picture><br><b>Art (3D)</b><br><sub>Blender modelling, real-time scenes in Rive</sub></td></tr>
+<tr><td width="50%" align="center"><img src="assets/disc-product-dark.gif#gh-dark-mode-only" alt="A pixel cursor drags a card into place" width="64" height="64"><img src="assets/disc-product-light.gif#gh-light-mode-only" alt="A pixel cursor drags a card into place" width="64" height="64"><br><b>Product design</b><br><sub>Flows, systems, polish</sub></td><td width="50%" align="center"><img src="assets/disc-engineering-dark.gif#gh-dark-mode-only" alt="Pixel code brackets blinking like a caret" width="64" height="64"><img src="assets/disc-engineering-light.gif#gh-light-mode-only" alt="Pixel code brackets blinking like a caret" width="64" height="64"><br><b>Engineering</b><br><sub>Prototypes and Figma plugins, in code</sub></td></tr>
+<tr><td width="50%" align="center"><img src="assets/disc-hardware-dark.gif#gh-dark-mode-only" alt="A pixel knob turning while an LED pulses" width="64" height="64"><img src="assets/disc-hardware-light.gif#gh-light-mode-only" alt="A pixel knob turning while an LED pulses" width="64" height="64"><br><b>Hardware interactions</b><br><sub>Physical-digital interfaces</sub></td><td width="50%" align="center"><img src="assets/disc-art-dark.gif#gh-dark-mode-only" alt="A pixel cube rotating" width="64" height="64"><img src="assets/disc-art-light.gif#gh-light-mode-only" alt="A pixel cube rotating" width="64" height="64"><br><b>Art (3D)</b><br><sub>Blender modelling, real-time scenes in Rive</sub></td></tr>
 </table>
 
 <p align="center">. . . . : : : * : : : . . . .</p>
@@ -74,8 +74,8 @@
 
 <table>
 <tr>
-<td width="50%" valign="top"><a href="https://sajalkumar.com/email-designer"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-titan-dark.gif"><source media="(prefers-color-scheme: light)" srcset="assets/card-titan-light.gif"><img src="assets/card-titan-dark.gif" alt="A pixel envelope opening as a letter slides up" width="100%"></picture></a><h3>Titan Email (Directi)</h3><p>Designed Email Designer (a block-based email builder), Link and File Tracking (Titan's top monetisation feature) and partner migration flows for GoDaddy.</p><p><b>Key result.</b> +20% retention; 100+ upgrades in a month; migration flows helped 2x the user base. Work I contributed to: Titan's GoDaddy pilot saw +76% ARPU, +39% trial-to-paid, 9x premium upgrades and a 65% NPS improvement (Titan's case study of the four-month pilot, as of Aug 2025).</p><p><a href="https://sajalkumar.com/email-designer">Email Designer case study</a> · <a href="https://sajalkumar.com/link-and-file-tracking">Tracking case study</a> · <a href="https://titan.email/go-daddy-partners-with-titan/">GoDaddy case study</a> · <a href="https://titan.email">Titan</a></p></td>
-<td width="50%" valign="top"><a href="https://sajalkumar.com/pulse"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-pulse-dark.gif"><source media="(prefers-color-scheme: light)" srcset="assets/card-pulse-light.gif"><img src="assets/card-pulse-dark.gif" alt="A pixel heartbeat line drawing across, ending in a pulsing dot" width="100%"></picture></a><h3>Pulse</h3><p>AI-native product intelligence and feedback triaging, built around agentic workflows. Led end-to-end design as a founding member.</p><p><b>Key result.</b> $1.5M seed from Endiya Partners; 6 enterprise customers (Zluri, Yellow AI, BrowserStack, MoEngage, Whatfix); 4x lead-to-PoC.</p><p><a href="https://sajalkumar.com/pulse">Case study</a></p></td>
+<td width="50%" valign="top"><a href="https://sajalkumar.com/email-designer#gh-dark-mode-only"><img src="assets/card-titan-dark.gif#gh-dark-mode-only" alt="A pixel envelope opening as a letter slides up" width="100%"></a><a href="https://sajalkumar.com/email-designer#gh-light-mode-only"><img src="assets/card-titan-light.gif#gh-light-mode-only" alt="A pixel envelope opening as a letter slides up" width="100%"></a><h3>Titan Email (Directi)</h3><p>Designed Email Designer (a block-based email builder), Link and File Tracking (Titan's top monetisation feature) and partner migration flows for GoDaddy.</p><p><b>Key result.</b> +20% retention; 100+ upgrades in a month; migration flows helped 2x the user base. Work I contributed to: Titan's GoDaddy pilot saw +76% ARPU, +39% trial-to-paid, 9x premium upgrades and a 65% NPS improvement (Titan's case study of the four-month pilot, as of Aug 2025).</p><p><a href="https://sajalkumar.com/email-designer">Email Designer case study</a> · <a href="https://sajalkumar.com/link-and-file-tracking">Tracking case study</a> · <a href="https://titan.email/go-daddy-partners-with-titan/">GoDaddy case study</a> · <a href="https://titan.email">Titan</a></p></td>
+<td width="50%" valign="top"><a href="https://sajalkumar.com/pulse#gh-dark-mode-only"><img src="assets/card-pulse-dark.gif#gh-dark-mode-only" alt="A pixel heartbeat line drawing across, ending in a pulsing dot" width="100%"></a><a href="https://sajalkumar.com/pulse#gh-light-mode-only"><img src="assets/card-pulse-light.gif#gh-light-mode-only" alt="A pixel heartbeat line drawing across, ending in a pulsing dot" width="100%"></a><h3>Pulse</h3><p>AI-native product intelligence and feedback triaging, built around agentic workflows. Led end-to-end design as a founding member.</p><p><b>Key result.</b> $1.5M seed from Endiya Partners; 6 enterprise customers (Zluri, Yellow AI, BrowserStack, MoEngage, Whatfix); 4x lead-to-PoC.</p><p><a href="https://sajalkumar.com/pulse">Case study</a></p></td>
 </tr>
 </table>
 
@@ -85,8 +85,8 @@
 
 <table>
 <tr>
-<td width="50%" valign="top"><a href="https://sajalkumar.com/tiny"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-tiny-dark.gif"><source media="(prefers-color-scheme: light)" srcset="assets/card-tiny-light.gif"><img src="assets/card-tiny-dark.gif" alt="A pixel sprout swaying while a speech bubble says hi" width="100%"></picture></a><h3>Tiny</h3><p><b>A plant you can talk to.</b> A multimodal, interactive plant experience.</p><p><a href="https://sajalkumar.com/tiny">Case study</a></p></td>
-<td width="50%" valign="top"><a href="https://github.com/theanimatedmonk/birdie"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/card-birdie-dark.gif"><source media="(prefers-color-scheme: light)" srcset="assets/card-birdie-light.gif"><img src="assets/card-birdie-dark.gif" alt="A pixel bird hopping along a branch and tilting its head" width="100%"></picture></a><h3>Birdie</h3><p><b>A wildlife finder.</b> An ESP32 microphone on the balcony streams audio to BirdNET, and each bird it hears shows up as an animated Rive card, with a radar and a logbook.</p><p><a href="https://github.com/theanimatedmonk/birdie">Repo</a></p></td>
+<td width="50%" valign="top"><a href="https://sajalkumar.com/tiny#gh-dark-mode-only"><img src="assets/card-tiny-dark.gif#gh-dark-mode-only" alt="A pixel sprout swaying while a speech bubble says hi" width="100%"></a><a href="https://sajalkumar.com/tiny#gh-light-mode-only"><img src="assets/card-tiny-light.gif#gh-light-mode-only" alt="A pixel sprout swaying while a speech bubble says hi" width="100%"></a><h3>Tiny</h3><p><b>A plant you can talk to.</b> A multimodal, interactive plant experience.</p><p><a href="https://sajalkumar.com/tiny">Case study</a></p></td>
+<td width="50%" valign="top"><a href="https://github.com/theanimatedmonk/birdie#gh-dark-mode-only"><img src="assets/card-birdie-dark.gif#gh-dark-mode-only" alt="A pixel bird hopping along a branch and tilting its head" width="100%"></a><a href="https://github.com/theanimatedmonk/birdie#gh-light-mode-only"><img src="assets/card-birdie-light.gif#gh-light-mode-only" alt="A pixel bird hopping along a branch and tilting its head" width="100%"></a><h3>Birdie</h3><p><b>A wildlife finder.</b> An ESP32 microphone on the balcony streams audio to BirdNET, and each bird it hears shows up as an animated Rive card, with a radar and a logbook.</p><p><a href="https://github.com/theanimatedmonk/birdie">Repo</a></p></td>
 </tr>
 </table>
 
@@ -96,7 +96,7 @@
 
 <h2 align="center">Contact</h2>
 
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/terminal-dark.gif"><source media="(prefers-color-scheme: light)" srcset="assets/terminal-light.gif"><img src="assets/terminal-dark.gif" alt="A pixel terminal typing: cat contact.json"></picture></p>
+<p align="center"><img src="assets/terminal-dark.gif#gh-dark-mode-only" alt="A pixel terminal typing: cat contact.json"><img src="assets/terminal-light.gif#gh-light-mode-only" alt="A pixel terminal typing: cat contact.json"></p>
 
 ```json
 {
@@ -116,4 +116,4 @@
 
 <p align="center">. . . . : : : * : : : . . . .</p>
 
-<p align="center"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.gif"><source media="(prefers-color-scheme: light)" srcset="assets/footer-light.gif"><img src="assets/footer-dark.gif" alt="A waving pixel hand, and: thanks for scrolling"></picture></p>
+<p align="center"><img src="assets/footer-dark.gif#gh-dark-mode-only" alt="A waving pixel hand, and: thanks for scrolling"><img src="assets/footer-light.gif#gh-light-mode-only" alt="A waving pixel hand, and: thanks for scrolling"></p>
