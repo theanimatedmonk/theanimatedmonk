@@ -636,12 +636,12 @@ def readme():
     tiny = card_cell(
         "card-tiny", "A pixel sprout swaying while a speech bubble says hi", f"{SITE}/tiny", "Tiny",
         "<b>A plant you can talk to.</b> A multimodal, interactive plant experience.", "",
-        [("Case study", f"{SITE}/tiny")],
+        [("Case study", f"{SITE}/tiny"), ("X post", "https://x.com/deanimatedmonk/status/2012245759308259466")],
     )
     birdie = card_cell(
         "card-birdie", "A pixel bird hopping along a branch and tilting its head", "https://github.com/theanimatedmonk/birdie", "Birdie",
         "<b>A wildlife finder.</b> An ESP32 microphone on the balcony streams audio to BirdNET, and each bird it hears shows up as an animated Rive card, with a radar and a logbook.", "",
-        [("Repo", "https://github.com/theanimatedmonk/birdie")],
+        [("Repo", "https://github.com/theanimatedmonk/birdie"), ("X post", "https://x.com/deanimatedmonk/status/2117702033201602909")],
     )
     social = " / ".join(link(label, CONTACT["socials"][key]) for key, label in [("x", "X"), ("linkedin", "LinkedIn"), ("github", "GitHub")])
     hero_alt = "Hi, I'm Sajal. Designer and builder. AI, hardware, software, canvas: all just mediums."
