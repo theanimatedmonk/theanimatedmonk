@@ -48,6 +48,7 @@ FONT_HEX = (
     "4428102844 4C9090907C 4464544C44"
 ).split()
 FONT = {chr(32 + i): bytes.fromhex(h) for i, h in enumerate(FONT_HEX)}
+FONT["~"] = bytes.fromhex("0804081008")
 
 
 def glyph(ch):
@@ -249,6 +250,45 @@ def metro():
         c.frame()
 
     scene("metro", W, H, 4, n, 100, bg, draw)
+
+
+# --- Impact cards ------------------------------------------------------------
+# name: (count-up values ending on the real number, label lines, full sentence for alt text)
+STATS = {
+    "plu": ([f"+{i}%" for i in range(8)], ["PLU", "conversion"], "+7% PLU conversion"),
+    "uninstalls": ([f"~{i}%" for i in range(12)], ["fewer D0/D1", "uninstalls"], "~11% fewer D0/D1 uninstalls"),
+    "search": ([f"+{i}%" for i in range(6)], ["search", "engagement"], "+5% search engagement"),
+    "seed": ([f"${i / 10:.1f}M" for i in range(10, 16)], ["seed from", "Endiya"], "$1.5M seed from Endiya Partners"),
+    "customers": ([str(i) for i in range(7)], ["enterprise", "customers"], "First 6 enterprise customers"),
+    "poc": ([f"{i}x" for i in range(5)], ["lead-to-PoC", "conversion"], "4x lead-to-PoC conversion"),
+    "retention": ([f"+{i}%" for i in range(0, 21, 2)], ["retention", "from tracking"], "+20% retention from Link and File Tracking"),
+    "upgrades": ([str(i) for i in range(0, 100, 10)] + ["100+"], ["upgrades", "in a month"], "100+ plan upgrades in a month from Email Designer"),
+    "userbase": ([f"{i}x" for i in range(3)], ["user base"], "2x user base, helped by partner migration flows"),
+    "nps": ([str(i) for i in range(0, 50, 5)] + ["50+"], ["NPS"], "NPS 50+"),
+    "rating": ([f"{i / 2:.1f}" for i in range(9)] + ["4.5+"], ["app store", "rating"], "4.5+ app store rating"),
+}
+
+
+def stats():
+    W, H, NUM = 78, 50, 3
+    for i, (name, (values, label, _)) in enumerate(STATS.items()):
+        if max(text_width(v, NUM) for v in values) > W - 6 or max(text_width(l) for l in label) > W - 6:
+            raise ValueError(f"stat-{name}: text is too wide")
+        # Frame 0 is the real number, held, so the card still reads if the GIF is paused.
+        seq = [values[-1]] + values[:-1]
+        accent = ["gold", "lilac", "pink"][i % 3]
+
+        def bg(c, label=label, accent=accent):
+            c.dither("bg2", lambda x, y: (x / W + y / H) / 2 * 0.8 - 0.1)
+            c.frame()
+            c.rect(1, 1, W - 2, 2, accent)
+            for j, line in enumerate(label):
+                c.text(line, 3, 30 + j * 9, "muted")
+
+        def draw(c, f, seq=seq):
+            c.text(seq[f], 3, 6, "text", NUM)
+
+        scene(f"stat-{name}", W, H, 2, len(seq), [7000 + i * 180] + [70] * (len(seq) - 1), bg, draw)
 
 
 # --- Discipline icons --------------------------------------------------------
@@ -587,28 +627,20 @@ def card_cell(name, alt, url, title, brief, result, links):
 def readme():
     role_rows = "\n".join(f"| {label} | {why} |" for label, why in ROLES)
     impact = [
-        ("Media.net", "Product Designer", "Oct 2025 – present", [
-            "<b>+7%</b> PLU conversion from the default-launcher onboarding redesign",
-            "<b>~11%</b> fewer D0/D1 uninstalls",
-            "<b>+5%</b> search engagement",
-        ]),
-        ("Pulse", "Founding Product Designer and Researcher", "Feb 2025 – Sep 2025", [
-            "<b>$1.5M</b> seed from Endiya Partners, led the design behind it",
-            "<b>6</b> first enterprise customers",
-            "<b>4x</b> lead-to-PoC conversion",
-        ]),
-        ("Titan Email (Directi)", "Product Designer", "May 2023 – Jan 2025", [
-            "<b>+20%</b> retention from Link and File Tracking",
-            "<b>100+</b> plan upgrades in a month from Email Designer",
-            "<b>2x</b> user base, helped by partner migration flows",
-            "NPS <b>50+</b> and <b>4.5+</b> app store ratings",
-        ]),
-        ("Trell, Titan, Zeta (Directi)", "Design Intern", "2022 – 2023", ["Web and mobile product work"]),
+        ("Media.net", "Product Designer", "Oct 2025 – present", ["plu", "uninstalls", "search"], ""),
+        ("Pulse", "Founding Product Designer and Researcher", "Feb 2025 – Sep 2025", ["seed", "customers", "poc"], ""),
+        ("Titan Email (Directi)", "Product Designer", "May 2023 – Jan 2025", ["retention", "upgrades", "userbase", "nps", "rating"], ""),
+        ("Trell, Titan, Zeta (Directi)", "Design Intern", "2022 – 2023", [], "Web and mobile product work"),
     ]
     rows = ""
-    for company, role, years, items in impact:
-        cells = "<br>".join(items)
-        rows += f"<tr><td width=\"38%\" valign=\"top\"><b>{company}</b><br>{role}<br><sub>{years}</sub></td><td valign=\"top\">{cells}</td></tr>\n"
+    for company, role, years, cards_here, note in impact:
+        tiles = " ".join(pic(f"stat-{s}", STATS[s][2]) for s in cards_here)
+        rows += f"<tr><td><b>{company}</b> · {role} · <sub>{years}</sub><br><br>{tiles}{note}</td></tr>\n"
+    plain_impact = (
+        "- **Media.net:** +7% PLU conversion from the default-launcher onboarding redesign; ~11% fewer D0/D1 uninstalls; +5% search engagement\n"
+        "- **Pulse:** led design behind a $1.5M seed from Endiya Partners; first 6 enterprise customers; 4x lead-to-PoC conversion\n"
+        "- **Titan Email:** +20% retention from Link and File Tracking; 100+ plan upgrades in a month from Email Designer; partner migration flows that helped 2x the user base; NPS 50+ and 4.5+ app store ratings"
+    )
 
     disc = [
         ("disc-product", "A pixel cursor drags a card into place", "Product design", "Flows, systems, polish"),
@@ -689,10 +721,16 @@ def readme():
 <h3 align="center">Past roles and impact</h3>
 
 <table>
-<tr><th>Role</th><th>Impact</th></tr>
 {rows}</table>
 
 <p align="center">~4 years of experience. B.Tech, IIT Patna (2019 – 2023). CEED All India Rank 105; JEE top 1 percentile.</p>
+
+<details>
+<summary>Impact in full</summary>
+
+{plain_impact}
+
+</details>
 
 <h3 align="center">Disciplines</h3>
 
@@ -747,7 +785,7 @@ if __name__ == "__main__":
     ASSETS.mkdir(exist_ok=True)
     for old in list(ASSETS.glob("*.svg")) + list(ASSETS.glob("*.gif")):
         old.unlink()
-    hero(); metro(); disciplines(); cards(); terminal(); footer()
+    hero(); metro(); stats(); disciplines(); cards(); terminal(); footer()
     (ROOT / "README.md").write_text(readme())
     sizes = sorted((p.stat().st_size, p.name) for p in ASSETS.glob("*.gif"))
     print(f"{len(sizes)} gifs, largest {sizes[-1][1]} {sizes[-1][0] // 1024} KB, all {sum(s for s, _ in sizes) // 1024} KB")

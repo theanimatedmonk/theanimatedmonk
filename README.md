@@ -52,14 +52,22 @@
 <h3 align="center">Past roles and impact</h3>
 
 <table>
-<tr><th>Role</th><th>Impact</th></tr>
-<tr><td width="38%" valign="top"><b>Media.net</b><br>Product Designer<br><sub>Oct 2025 – present</sub></td><td valign="top"><b>+7%</b> PLU conversion from the default-launcher onboarding redesign<br><b>~11%</b> fewer D0/D1 uninstalls<br><b>+5%</b> search engagement</td></tr>
-<tr><td width="38%" valign="top"><b>Pulse</b><br>Founding Product Designer and Researcher<br><sub>Feb 2025 – Sep 2025</sub></td><td valign="top"><b>$1.5M</b> seed from Endiya Partners, led the design behind it<br><b>6</b> first enterprise customers<br><b>4x</b> lead-to-PoC conversion</td></tr>
-<tr><td width="38%" valign="top"><b>Titan Email (Directi)</b><br>Product Designer<br><sub>May 2023 – Jan 2025</sub></td><td valign="top"><b>+20%</b> retention from Link and File Tracking<br><b>100+</b> plan upgrades in a month from Email Designer<br><b>2x</b> user base, helped by partner migration flows<br>NPS <b>50+</b> and <b>4.5+</b> app store ratings</td></tr>
-<tr><td width="38%" valign="top"><b>Trell, Titan, Zeta (Directi)</b><br>Design Intern<br><sub>2022 – 2023</sub></td><td valign="top">Web and mobile product work</td></tr>
+<tr><td><b>Media.net</b> · Product Designer · <sub>Oct 2025 – present</sub><br><br><img src="assets/stat-plu-dark.gif#gh-dark-mode-only" alt="+7% PLU conversion"><img src="assets/stat-plu-light.gif#gh-light-mode-only" alt="+7% PLU conversion"> <img src="assets/stat-uninstalls-dark.gif#gh-dark-mode-only" alt="~11% fewer D0/D1 uninstalls"><img src="assets/stat-uninstalls-light.gif#gh-light-mode-only" alt="~11% fewer D0/D1 uninstalls"> <img src="assets/stat-search-dark.gif#gh-dark-mode-only" alt="+5% search engagement"><img src="assets/stat-search-light.gif#gh-light-mode-only" alt="+5% search engagement"></td></tr>
+<tr><td><b>Pulse</b> · Founding Product Designer and Researcher · <sub>Feb 2025 – Sep 2025</sub><br><br><img src="assets/stat-seed-dark.gif#gh-dark-mode-only" alt="$1.5M seed from Endiya Partners"><img src="assets/stat-seed-light.gif#gh-light-mode-only" alt="$1.5M seed from Endiya Partners"> <img src="assets/stat-customers-dark.gif#gh-dark-mode-only" alt="First 6 enterprise customers"><img src="assets/stat-customers-light.gif#gh-light-mode-only" alt="First 6 enterprise customers"> <img src="assets/stat-poc-dark.gif#gh-dark-mode-only" alt="4x lead-to-PoC conversion"><img src="assets/stat-poc-light.gif#gh-light-mode-only" alt="4x lead-to-PoC conversion"></td></tr>
+<tr><td><b>Titan Email (Directi)</b> · Product Designer · <sub>May 2023 – Jan 2025</sub><br><br><img src="assets/stat-retention-dark.gif#gh-dark-mode-only" alt="+20% retention from Link and File Tracking"><img src="assets/stat-retention-light.gif#gh-light-mode-only" alt="+20% retention from Link and File Tracking"> <img src="assets/stat-upgrades-dark.gif#gh-dark-mode-only" alt="100+ plan upgrades in a month from Email Designer"><img src="assets/stat-upgrades-light.gif#gh-light-mode-only" alt="100+ plan upgrades in a month from Email Designer"> <img src="assets/stat-userbase-dark.gif#gh-dark-mode-only" alt="2x user base, helped by partner migration flows"><img src="assets/stat-userbase-light.gif#gh-light-mode-only" alt="2x user base, helped by partner migration flows"> <img src="assets/stat-nps-dark.gif#gh-dark-mode-only" alt="NPS 50+"><img src="assets/stat-nps-light.gif#gh-light-mode-only" alt="NPS 50+"> <img src="assets/stat-rating-dark.gif#gh-dark-mode-only" alt="4.5+ app store rating"><img src="assets/stat-rating-light.gif#gh-light-mode-only" alt="4.5+ app store rating"></td></tr>
+<tr><td><b>Trell, Titan, Zeta (Directi)</b> · Design Intern · <sub>2022 – 2023</sub><br><br>Web and mobile product work</td></tr>
 </table>
 
 <p align="center">~4 years of experience. B.Tech, IIT Patna (2019 – 2023). CEED All India Rank 105; JEE top 1 percentile.</p>
+
+<details>
+<summary>Impact in full</summary>
+
+- **Media.net:** +7% PLU conversion from the default-launcher onboarding redesign; ~11% fewer D0/D1 uninstalls; +5% search engagement
+- **Pulse:** led design behind a $1.5M seed from Endiya Partners; first 6 enterprise customers; 4x lead-to-PoC conversion
+- **Titan Email:** +20% retention from Link and File Tracking; 100+ plan upgrades in a month from Email Designer; partner migration flows that helped 2x the user base; NPS 50+ and 4.5+ app store ratings
+
+</details>
 
 <h3 align="center">Disciplines</h3>
 
